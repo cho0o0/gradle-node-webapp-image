@@ -1,5 +1,7 @@
 FROM gradle:5.5.1-jdk11
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt update \
   && apt install -y docker.io \
   && apt install -y python3-pip \
