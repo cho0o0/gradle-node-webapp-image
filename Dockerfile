@@ -5,6 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt update \
   && apt install -y docker.io \
   && apt install -y python3-pip \
+  && apt install -y jq \
   && pip3 install --no-input docker-compose
 
 RUN apt update \
